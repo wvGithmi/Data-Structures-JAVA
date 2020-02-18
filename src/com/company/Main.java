@@ -58,6 +58,59 @@ public class Main {
         prq.EnQue(new Person("Padma", "126"));
 
         prq.showAll();
+
+        System.out.print("\n\n");
+
+        //Linkedlist coding
+        System.out.println("Linkedlist Coding");
+
+        IntLinkedList list = new IntLinkedList();
+
+        //Inserting elements to the front
+        list.insertFront(8);
+        list.insertFront(7);
+        list.insertFront(6);
+
+        list.printList(); //Print the list
+
+        list.deleteItem(7); //Delete nodes of the list
+
+        System.out.println("\nAfter deleting an item - ");
+        list.printList();
+
+        System.out.println();
+
+        //Insertting elements to the rear
+        list.insertRear(-2);
+        list.insertRear(11);
+
+        list.printList();
+
+        list.deleteItem(-2);
+
+        System.out.println("\nAfter deleteing an item - ");
+        list.printList();
+
+        list.sortList(); //Sort nodes of the list
+        System.out.println("\nAfter sorting the list - ");
+        list.printList();
+
+        System.out.println();
+
+        Person per1 = new Person("Hansika", "117");
+        Person per2 = new Person("Supuni", "118");
+        Person per3 = new Person("Chandima", "119");
+
+        PersonLinkedList prlist = new PersonLinkedList(per1);
+        prlist.insertFront(per2);
+        prlist.insertRear(per3);
+
+        prlist.printList();
+
+        /*prlist.deleteItem("Chandima");
+        System.out.println("\nAfter deleting a person - ");
+        prlist.printList();*/
+
     }
 
 }

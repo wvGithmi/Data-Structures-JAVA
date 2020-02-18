@@ -12,6 +12,11 @@ public class Person {
         this.roll_no = roll_no;
     }
 
+    //getName method
+    public String getName(){
+        return name;
+    }
+
     public String toString(){
         return "Name : " + this.name + "   Roll No : " + this.roll_no;
     }
